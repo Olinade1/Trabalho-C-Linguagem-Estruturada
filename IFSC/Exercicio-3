@@ -1,0 +1,42 @@
+3. Considerando as variáveis declaradas na tabela abaixo e mais a variável booleana TESTE, com valor FALSO, avalie as expressões a seguir, para cada uma das três combinações de valores apresentadas:
+
+	A	B	NOME	PROFISSAO
+1	3	16	‘MIRIAM’	‘ADVOGADO’
+2	5	64	‘PEDRO’	‘MEDICO’
+3	2.5	9	‘ANA’	‘PROFESSOR’
+
+Nº 1
+A = 3, B = 16, NOME = ‘MIRIAM’, PROFISSAO = ‘ADVOGADO’
+Nº 2
+A = 5, B = 64, NOME = ‘PEDRO’, PROFISSAO = ‘MEDICO’
+Nº 3
+A = 2.5, B = 9, NOME = ‘ANA’, PROFISSAO = ‘PROFESSOR’
+
+a) (A + 1 >= ((B) ^ (1/2)) OU (NOME <> 'ANA'))
+Nº1
+(3 + 1) = 4;
+16 ^1/2 = SQRT(16) = 4
+
+(4 >= 4 OU NOME <> ‘ANA’) == 1 – VERDADE
+
+Nº2
+(5 + 1) = 6;
+64^1/2 = 8;
+PEDRO <> ANA;
+
+(6 >= 8 OU PEDRO <> ANA) = 1 – VERDADE
+
+Nº3
+(2.5 + 1) = 3.5;
+9^1/2 = 3;
+ANA <> ANA;
+
+(3.5 >= 3 OU ANA <> ANA) = 1 - VERDADE
+
+
+b) (A + 1 >= ((B) ^ (1/2)) E (PROFISSAO = 'MEDICO'))
+
+
+c) (NOME <> 'ANA') OU (PROFISSAO = 'MEDICO') E (A + 1 >= ((B) ^ (1/2)))
+d) NÃO TESTE E ((A + 1) >= ((B) ^ (1/2)) OU NÃO (PROFISSAO = 'MEDICO'))
+e) NÃO ((A + 1 >= ((B) ^ (1/2)) E TESTE))
