@@ -87,7 +87,7 @@ Nº3
 
 (‘ANA’<> ‘ANA’) OU ( ‘PROFESSOR = MEDICO’ ) E (3.5>=3) = 0 - FALSO
 
-d) NÃO TESTE E ((A + 1) >= ((B) ^ (1/2)) OU NÃO (PROFISSAO = 'MEDICO'))
+## d) NÃO TESTE E ((A + 1) >= ((B) ^ (1/2)) OU NÃO (PROFISSAO = 'MEDICO'))
 
 Nº1
 
