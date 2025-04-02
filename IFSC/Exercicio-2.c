@@ -90,7 +90,8 @@ programa
 
 	funcao inicio () {
 
-	inteiro base, expoente, contador = 1, resultado = 0;
+	inteiro expoente, contador = 0;
+	real base, resultado = 1.0;
 
 	escreva ("Informe o valor da base e expoente, respectivamente: ");
 	leia (base);
@@ -98,135 +99,59 @@ programa
 
 
 		se ( expoente == 0) {
-
-			resultado = 1;
-
 			escreva ("\nO valor da base ", base, " elevado ao expoente ", expoente, " é igual a: ", resultado);
 		}
-
-		senao {
-
-			se ( expoente < 0) {
-
-			escreva ("Aí é raíz quadrada. Me ajude!");
-		}
-		
-		 senao {
-
-			se ( expoente == 1) {
-
-			resultado = base
-
-			escreva ("\nO valor da base ", base, " elevado ao expoente ", expoente, " é igual a: ", resultado);
-			
-			} 
-
-			senao {
-				
-				enquanto ( contador < expoente ) {
-
-					se ( contador == 1 ) {
-
-						resultado = base * base;
-						contador = contador + 1;
-					}
-
-					senao {
-
-						resultado = resultado * base;
-						contador = contador + 1;
-						
-					}
-					
-				}
-
-				escreva ("\nO valor da base ", base, " elevado ao expoente ", expoente, " é igual a: ", resultado);
+		senao se ( expoente > 0 ) {				
+			enquanto ( contador < expoente ) {
+				resultado = resultado * base;
+				contador = contador + 1;
 			}
-
-				
+			escreva ("\nO valor da base ", base, " elevado ao expoente ", expoente, " é igual a: ", resultado);
 		}
-
-	}
-
-}
+		senao {
+			enquanto ( contador > expoente ) {
+				resultado = resultado * 1 / base;
+				contador = contador - 1;
+			}
+			escreva ("\nO valor da base ", base, " elevado ao expoente ", expoente, " é igual a: ", resultado);	
+			}
+		}	
 }
 
 ## e) a * b^c
 
 programa
 {
-
 	funcao inicio () {
 
-	inteiro a, b, c, bElevadoC = 0, contador = 1, resultado = 0;
+	inteiro c, contador = 0;
+	real b, a, bElevadoc = 1.0, resultado = 1.0;
 
-	escreva ("Informe o valor de A, B e C, respectivamente: ");
+	escreva ("Informe o valor de a, b, c, respectivamente: ");
 	leia (a);
 	leia (b);
 	leia (c);
 
-
+		
 		se ( c == 0) {
-
-			bElevadoC = 1;
-
-			resultado = a * bElevadoC;
-
-			escreva ("\nResultado de A * B elevado a C é igual: ", resultado);
-
+			resultado = a*bElevadoc;
+			escreva ("\nO valor de a*b^c é igual a: ", resultado);
 		}
-
-		senao {
-
-			se ( c < 0) {
-
-			escreva ("Aí é raiz de B sobre C. Me ajude!");
-		}
-		
-		 senao {
-
-			se ( c == 1) {
-
-			bElevadoC = b;
-			resultado = a * b;
-
-			escreva ("\nResultado de A * B elevado a C é igual: ", resultado);
-			
-			} 
-
-			senao {
-				
-				enquanto ( contador < c ) {
-
-					se ( contador == 1 ) {
-
-						bElevadoC = b * b;
-						contador = contador + 1;
-					}
-
-					senao {
-
-						bElevadoC = bElevadoC * b;
-						contador = contador + 1;
-						
-					}
-					
-				}
-				
-				resultado = a * bElevadoC;
-				
-				escreva ("\nResultado de A * B elevado a C é igual: ", resultado);
+		senao se ( c > 0 ) {				
+			enquanto ( contador < c ) {
+				bElevadoc = bElevadoc * b;
+				contador = contador + 1;
 			}
-
-				
+			resultado = a*bElevadoc;
+			escreva ("\nO valor de a*b^c é igual a: ", resultado);
 		}
-
-	}
-
-		
-
-	
-		
-	
-}
+		senao {
+			enquanto ( contador > c ) {
+				bElevadoc = bElevadoc * 1 / b;
+				contador = contador - 1;
+			}
+			resultado = a*bElevadoc;
+			escreva ("\nO valor de a*b^c é igual a: ", resultado);	
+			}
+		}		
 }
