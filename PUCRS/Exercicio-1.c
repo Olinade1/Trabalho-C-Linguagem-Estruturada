@@ -3,29 +3,25 @@
 
 int main() {
     
-float a;
-int resp = 0; 
-int i = 0;
+    float a;
+    int resp = 0; 
+    int i = 0;
 
-printf("Digite 5 valores: ");
+    printf("Digite 5 valores: ");
 
-while (i<5){
+    while (i<5){
     
-    scanf("%f",&a);
+        scanf("%f",&a);
     
-    if (a<0)
-        resp+=1;
+            if (a<0)
+                resp+=1;
         
-    i+=1;
+        i+=1;
     
-            }
+    }
     
 printf("\nQuantidade de números negativos: %d", resp);
 
     return 0;
 }
     
-    printf("\nQuantidade de números negativos: %d", resp);
-
-    return 0;
-}
