@@ -8,52 +8,23 @@ tenha se matriculado no 1º ou 2º semestre;
 da matrícula do aluno, no semestre e no ano em questão.
 Crie um algoritmo que leia o número de matrícula de um aluno e imprima o ano
 e o semestre em que ele foi matriculado.
-
 */
 
 #include <stdio.h>
 
 int main() {
-
-    int matr, ano, sem;
-
-    printf("Digite sua matricula:");
-    scanf("%d",&matr);
+    char matr[8];    
+do{
+    printf("Digite sua matricula: ");
+    scanf("%s",matr);
     
-    ano = matr / 100000;
+    if(matr[2]== '1' || matr[2] == '2' ){
+        printf("\n\nAno de matrícula: 20%c%c", matr[0],matr[1]);
+        printf("\n%cº semestre",matr[2]);
+    }
+    else
+        printf("Matrícula inválida\n");
+  } while (matr[2]!= '1' && matr[2] != '2');
     
-    
-      printf("\nDois primeiros dígitos: %d", ano);
-      printf("\nO ano de matricula 20%d", ano);
-      
-    sem = matr / 10000 % (ano * 10);
-    
-    printf("\n\nTerceiro dígito: %d", sem);
-    printf("\nSemestre: %d", sem);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-//    sem = matr / 10000 - (ano * 10);
-    
-  
-//    
-/*    if (sem == 1 || sem == 2)
-    printf("%d semestre", sem);
-    
-    else 
-    printf("\nmatricula inválida");
-*/
     return 0;
 }
