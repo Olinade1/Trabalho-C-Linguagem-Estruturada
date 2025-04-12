@@ -1,0 +1,53 @@
+4. Coloque VERDADEIRO ou FALSO na avaliação das seguintes expressões:
+
+a) 6 <= 7 
+
+6 não é menor ou igual a 7
+Resposta = FALSO
+
+b) (64) ^ (1/2) > (5)*2
+
+64^1/2 = 8; 5*2 = 10
+8 > 10
+Resposta = FALSO
+
+c) 'Pseudocódigo' < 'PSEUDOCÓDIGO' 
+
+Tabela ASCii, a letra minuscula tem valor maior que a maiúscula, por tanto;
+Resposta = FALSO
+
+d) 'Pseudocódigo' > 'turbo'
+
+'P' = 80
+'s' = 115
+'e' = 101
+'u' = 117
+'d' = 100
+'o' = 111
+'c' = 99
+'o' = 111
+'d' = 100
+'i' = 105
+'g' = 103
+'o' = 111
+
+SOMA = 1253
+
+'t' = 116
+'u' = 117
+'r' = 114
+'b' = 98
+'o' = 111
+
+SOMA = 556
+
+1253 > 556
+
+Resposta = VERDADEIRO
+
+e) 3 + 5 <= 2 * 4
+
+3 + 5 = 8; 2 * 4 = 8
+8 <= 8
+
+Resposta = VERDADEIRO
