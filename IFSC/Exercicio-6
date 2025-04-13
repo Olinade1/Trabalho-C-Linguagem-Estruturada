@@ -1,0 +1,28 @@
+6. Com as declarações:
+ real soma, x
+ string nome, cor
+ booleano cod, teste, tudo
+
+Assinale com um X os comandos de atribuição válidos.
+
+ (x) teste = cod OU ((x)*2 <> soma)
+
+teste é booleano;
+cod é booleano;
+x*2 <> soma é booleano
+
+ ( ) tudo = soma
+
+Expressão do tipo real não pode ser atribuída à variável do tipo lógico
+
+ ( ) x = nome >= cor
+
+Expressao do tipo real não recebe atribuição de caractere
+
+ ( ) cod = cor = 'verde'
+
+Expressao do tipo booleano não recebe atribuição de string
+
+ ( x) tudo = NÃO teste OU cod E (soma < x)
+
+Todas as variáveis são do tipo booleana, então a variável 'tudo' pode receber o valor do resultado da expressão à direita do operador de atribuição
