@@ -1,0 +1,25 @@
+5. Qual é o resultado das operações quando o algoritmo encontrar as seguintes
+linhas:
+
+ a) Escreva ('mario' = 'maria'); 
+
+Resposta: 0
+
+b) Escreva (2 + 4 = 6);
+
+Resposta: 1
+
+ c) Escreva (10 - 4 > 7); 
+
+Resposta: 0
+
+d) Escreva ((2*3)>(3*2));
+
+Resposta: 0
+
+ e) Escreva (não('a' > 'A'))
+
+Resposta: 0
+Letra minúscula tem valor maior que maiúscula, na tabela ASCII.
+'a' > 'A' = Verdadeiro
+não ('a' > 'A') = Falso
