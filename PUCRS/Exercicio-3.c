@@ -18,7 +18,7 @@ int main() {
     
    while (sal>=0){
        
-    printf("Informe salário: ");
+    printf("Informe salário(digite valor negativo para sair): ");
     scanf("%f",&sal);
     
     if(sal<0)
