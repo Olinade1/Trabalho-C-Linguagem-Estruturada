@@ -14,56 +14,56 @@ com D.
 int main()
 {
     
-    int a, b, c, d;
-    int soma, mult;
+    float a, b, c, d;
+    float soma, mult;
     
     printf("Informe valor de A: ");
-    scanf("%d",&a);
+    scanf("%f",&a);
     
     printf("\nInforme valor de B: ");
-    scanf("%d",&b);
+    scanf("%f",&b);
     
     printf("\nInforme valor de C: ");
-    scanf("%d",&c);
+    scanf("%f",&c);
     
     printf("\nInforme valor de D: ");
-    scanf("%d",&d);
+    scanf("%f",&d);
     
     soma = a + b;
     mult = a * b;
 
-    printf("\n\nA + B: %d",soma);
-    printf("\nA * B: %d",mult);
+    printf("\n\nA + B: %.2f",soma);
+    printf("\nA * B: %.2f",mult);
     
     soma = a + c;
     mult = a * c;
 
-    printf("\nA + C: %d",soma);
-    printf("\nA * C: %d",mult);
+    printf("\nA + C: %.2f",soma);
+    printf("\nA * C: %.2f",mult);
     
     soma = a + d;
     mult = a * d;
 
-    printf("\nA + D: %d",soma);
-    printf("\nA * D: %d",mult);
+    printf("\nA + D: %.2f",soma);
+    printf("\nA * D: %.2f",mult);
     
     soma = b + c;
     mult = b * c;
 
-    printf("\nB + C: %d",soma);
-    printf("\nB * C: %d",mult);
+    printf("\nB + C: %.2f",soma);
+    printf("\nB * C: %.2f",mult);
     
     soma = b + d;
     mult = b * d;
 
-    printf("\nB + D: %d",soma);
-    printf("\nB * D: %d",mult);
+    printf("\nB + D: %.2f",soma);
+    printf("\nB * D: %.2f",mult);
     
     soma = c + d;
     mult = c * d;
 
-    printf("\nC + D: %d",soma);
-    printf("\nC * D: %d",mult);
+    printf("\nC + D: %.2f",soma);
+    printf("\nC * D: %.2f",mult);
     
 
     return 0;
