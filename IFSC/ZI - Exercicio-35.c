@@ -32,6 +32,8 @@ int main()
     printf("Imprima a nota de Conhecimentos Gerais: ");
     scanf("%f",&notaCG);
     
+    printf("\n\nCandidato: %s", nome);
+    
     media = (notaPort + notaMat + notaCG) / 3;
     printf("\nMédia : %.2f", media);
     
